@@ -30,8 +30,6 @@ public class Clock {
 
 	private int second = 0;
 
-	private int timezone = 0;
-
 	/**
 	 * @return the hour
 	 */
@@ -75,21 +73,6 @@ public class Clock {
 	 */
 	public void setSecond(int second) {
 		this.second = second;
-	}
-
-	/**
-	 * @return the timezone
-	 */
-	public int getTimezone() {
-		return timezone;
-	}
-
-	/**
-	 * @param timezone
-	 *            the timezone to set
-	 */
-	public void setTimezone(int timezone) {
-		this.timezone = timezone;
 	}
 
 }
