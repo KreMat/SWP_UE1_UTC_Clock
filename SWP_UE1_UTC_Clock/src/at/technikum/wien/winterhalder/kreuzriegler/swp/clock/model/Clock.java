@@ -26,6 +26,9 @@ public class Clock extends AbstractSubject {
 		return singletonInstance;
 	}
 
+	// TODO eventuell auf Calendar umstellen, um immer gültige Werte zu
+	// speichern (lenient)
+
 	private int hour = 0;
 
 	private int minute = 0;
