@@ -8,8 +8,8 @@ import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.model.Clock;
  */
 public class SetCommand extends AbstractClockChangeCommand {
 
-	public SetCommand(Clock clock, Integer h, Integer m, Integer s) {
-		super(clock, h, m, s);
+	public SetCommand(Integer h, Integer m, Integer s) {
+		super(h, m, s);
 	}
 
 	@Override

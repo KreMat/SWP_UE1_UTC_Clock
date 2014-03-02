@@ -3,24 +3,23 @@
  */
 package at.technikum.wien.winterhalder.kreuzriegler.swp.clock.view;
 
-import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.ClockType;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.model.Clock;
 
 /**
  * @author richie
  * 
  */
-public abstract class AbstractClockView {
+public abstract class AbstractClockView implements ClockObserver {
 
 	protected Clock clock;
-	protected ClockType type;
 	protected int timezone;
 
-	public AbstractClockView(Clock clock, ClockType type, int timezone) {
+	public AbstractClockView(Clock clock, int timezone) {
 		this.clock = clock;
-		this.type = type;
 		this.timezone = timezone;
 	}
-	
+
 	public abstract void show(int x, int y);
+	
+	public abstract void close();
 }

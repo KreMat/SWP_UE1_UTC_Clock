@@ -3,13 +3,15 @@
  */
 package at.technikum.wien.winterhalder.kreuzriegler.swp.clock.model;
 
+import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commons.AbstractSubject;
+
 /**
  * Singleton Clock Model
  * 
  * @author Matthias
  * 
  */
-public class Clock {
+public class Clock extends AbstractSubject {
 
 	private static Clock singletonInstance = new Clock();
 
