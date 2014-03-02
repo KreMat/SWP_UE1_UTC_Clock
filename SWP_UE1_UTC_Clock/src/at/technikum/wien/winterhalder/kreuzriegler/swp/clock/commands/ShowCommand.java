@@ -7,6 +7,7 @@ import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commons.ClockType;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.model.Clock;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.view.AbstractClockView;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.view.GreenClockView;
+import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.view.RedClockView;
 
 /**
  * @author richie
@@ -48,6 +49,14 @@ public class ShowCommand implements ICommand {
 				view = new GreenClockView(clock, timezone);
 				view.show(x, y);
 				clock.add(view);
+				break;
+			case REDCLOCK:
+				view = new RedClockView(clock, timezone);
+				view.show(x, y);
+				clock.add(view);
+				break;
+			default:
+				// What about default?
 				break;
 			}
 		}

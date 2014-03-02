@@ -8,14 +8,14 @@ import java.awt.Color;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.model.Clock;
 
 /**
- * @author richie
+ * @author Matthias
  * 
  */
-public class GreenClockView extends AbstractColoredClockView {
+public class BlueClockView extends AbstractColoredClockView {
 
-	public GreenClockView(Clock clock, int timezone) {
+	public BlueClockView(Clock clock, int timezone) {
 		super(clock, timezone);
-		panel.setBackground(Color.GREEN);
+		panel.setBackground(Color.BLUE);
 	}
 
 }

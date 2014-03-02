@@ -1,6 +1,5 @@
 package at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands;
 
-import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.model.Clock;
 
 public class IncCommand extends AbstractClockChangeCommand {
 

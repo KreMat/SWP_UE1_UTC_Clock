@@ -1,6 +1,5 @@
 package at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands;
 
-import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.model.Clock;
 
 public class DecCommand extends AbstractClockChangeCommand {
 
@@ -21,7 +20,7 @@ public class DecCommand extends AbstractClockChangeCommand {
 		if (s != null) {
 			clock.setSecond(clock.getSecond() - s);
 		}
-		
+
 		normalizeClock();
 
 	}
