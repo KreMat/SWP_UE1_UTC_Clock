@@ -9,6 +9,10 @@ import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commons.IllegalComm
 
 public class ApplicationMain {
 
+	private static final String REDO = "redo";
+	private static final String UNDO = "undo";
+	private static final String QUIT = "quit";
+
 	public static void main(String[] args) {
 
 		final Commander comm = new Commander();
@@ -19,13 +23,13 @@ public class ApplicationMain {
 			System.out.println("Your Command please: ");
 			String line = sc.nextLine();
 			switch (line) {
-			case "quit":
+			case QUIT:
 				nextCommand = false;
 				continue;
-			case "undo":
+			case UNDO:
 				comm.undo();
 				continue;
-			case "redo":
+			case REDO:
 				comm.redo();
 				continue;
 			}
