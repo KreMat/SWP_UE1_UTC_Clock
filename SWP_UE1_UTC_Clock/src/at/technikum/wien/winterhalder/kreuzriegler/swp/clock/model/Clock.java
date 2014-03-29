@@ -3,6 +3,9 @@
  */
 package at.technikum.wien.winterhalder.kreuzriegler.swp.clock.model;
 
+import java.util.Calendar;
+import java.util.TimeZone;
+
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commons.AbstractSubject;
 
 /**
@@ -13,33 +16,26 @@ import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commons.AbstractSub
  */
 public class Clock extends AbstractSubject {
 
-	private static Clock singletonInstance = new Clock();
+	private static final Clock singletonInstance = new Clock();
 
 	/**
 	 * protected Constructor for singleton needed
 	 */
 	protected Clock() {
-
+		cal.setLenient(true);
 	}
 
 	public static Clock getInstance() {
 		return singletonInstance;
 	}
 
-	// TODO eventuell auf Calendar umstellen, um immer gültige Werte zu
-	// speichern (lenient)
-
-	private int hour = 0;
-
-	private int minute = 0;
-
-	private int second = 0;
+	private Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
 
 	/**
 	 * @return the hour
 	 */
 	public int getHour() {
-		return hour;
+		return cal.get(Calendar.HOUR_OF_DAY);
 	}
 
 	/**
@@ -47,14 +43,14 @@ public class Clock extends AbstractSubject {
 	 *            the hour to set
 	 */
 	public void setHour(int hour) {
-		this.hour = hour;
+		cal.set(Calendar.HOUR_OF_DAY, hour);
 	}
 
 	/**
 	 * @return the minute
 	 */
 	public int getMinute() {
-		return minute;
+		return cal.get(Calendar.MINUTE);
 	}
 
 	/**
@@ -62,14 +58,14 @@ public class Clock extends AbstractSubject {
 	 *            the minute to set
 	 */
 	public void setMinute(int minute) {
-		this.minute = minute;
+		cal.set(Calendar.MINUTE, minute);
 	}
 
 	/**
 	 * @return the second
 	 */
 	public int getSecond() {
-		return second;
+		return cal.get(Calendar.SECOND);
 	}
 
 	/**
@@ -77,7 +73,7 @@ public class Clock extends AbstractSubject {
 	 *            the second to set
 	 */
 	public void setSecond(int second) {
-		this.second = second;
+		cal.set(Calendar.SECOND, second);
 	}
 
 }

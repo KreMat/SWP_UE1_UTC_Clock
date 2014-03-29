@@ -1,14 +1,15 @@
 package at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands;
 
+import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.model.Clock;
 
 /**
  * @author richie
- *
+ * 
  */
 public class SetCommand extends AbstractClockChangeCommand {
 
-	public SetCommand(Integer h, Integer m, Integer s) {
-		super(h, m, s);
+	public SetCommand(Clock clock, Integer h, Integer m, Integer s) {
+		super(clock, h, m, s);
 	}
 
 	@Override
@@ -25,8 +26,7 @@ public class SetCommand extends AbstractClockChangeCommand {
 		if (s != null) {
 			clock.setSecond(s);
 		}
-		
-		normalizeClock();
+
 	}
 
 }

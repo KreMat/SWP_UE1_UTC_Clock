@@ -6,6 +6,7 @@ package at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commons.ClockType;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.model.Clock;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.view.AbstractClockView;
+import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.view.BlueClockView;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.view.GreenClockView;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.view.RedClockView;
 
@@ -22,8 +23,8 @@ public class ShowCommand implements ICommand {
 	private int y;
 	private AbstractClockView view;
 
-	public ShowCommand(ClockType type, int timezone, int x, int y) {
-		this.clock = Clock.getInstance();
+	public ShowCommand(Clock clock, ClockType type, int timezone, int x, int y) {
+		this.clock = clock;
 		this.type = type;
 		this.timezone = timezone;
 		this.x = x;
@@ -55,9 +56,13 @@ public class ShowCommand implements ICommand {
 				view.show(x, y);
 				clock.add(view);
 				break;
-			default:
-				// What about default?
+			case BLUECLOCK:
+				view = new BlueClockView(clock, timezone);
+				view.show(x, y);
+				clock.add(view);
 				break;
+			default:
+				throw new IllegalStateException("TYPE: " + type + " not valid!");
 			}
 		}
 

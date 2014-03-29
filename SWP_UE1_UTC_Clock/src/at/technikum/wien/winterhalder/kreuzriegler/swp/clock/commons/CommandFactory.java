@@ -12,6 +12,7 @@ import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.ICommand;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.IncCommand;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.SetCommand;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.ShowCommand;
+import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.model.Clock;
 
 /**
  * @author richie
@@ -28,6 +29,16 @@ public class CommandFactory {
 	private static final String H = "h";
 	private static final String COMMAND = "command";
 
+	private static final Clock clock = Clock.getInstance();
+
+	private static final Map<String, Integer> TIMEZONE_MAP = new HashMap<String, Integer>();
+
+	static {
+		TIMEZONE_MAP.put("VIENNA", 60);
+		TIMEZONE_MAP.put("LONDON", 0);
+		TIMEZONE_MAP.put("LA", -8 * 60);
+	}
+
 	public static ICommand createCommand(String input)
 			throws IllegalCommandException {
 
@@ -43,27 +54,45 @@ public class CommandFactory {
 
 			for (int i = 1; i < splittedInput.length; i++) {
 				String[] keyValue = splittedInput[i].split(" ");
-				map.put(keyValue[0], keyValue[1]);
+				if (keyValue.length == 2) {
+					map.put(keyValue[0], keyValue[1]);
+				} else {
+					throw new IllegalCommandException("Command is not valid");
+				}
 			}
 		}
 
 		switch (map.get(COMMAND)) {
 		case "set":
-			return new SetCommand(parseWithDefault(map.get(H), null),
+			return new SetCommand(clock, parseWithDefault(map.get(H), null),
 					parseWithDefault(map.get(M), null), parseWithDefault(
 							map.get(S), null));
 		case "inc":
-			return new IncCommand(parseWithDefault(map.get(H), null),
+			return new IncCommand(clock, parseWithDefault(map.get(H), null),
 					parseWithDefault(map.get(M), null), parseWithDefault(
 							map.get(S), null));
 		case "dec":
-			return new DecCommand(parseWithDefault(map.get(H), null),
+			return new DecCommand(clock, parseWithDefault(map.get(H), null),
 					parseWithDefault(map.get(M), null), parseWithDefault(
 							map.get(S), null));
 		case "show":
-			return new ShowCommand(ClockType.getType(map.get(T)),
-					parseWithDefault(map.get(Z), 0), parseWithDefault(
-							map.get(X), 0), parseWithDefault(map.get(Y), 0));
+			ClockType type = ClockType.getType(map.get(T));
+			if (type == null) {
+				throw new IllegalCommandException("TYPE: " + map.get(T)
+						+ " is not valid");
+			}
+			int timezone = 0;
+			if (map.containsKey(Z)) {
+				if (TIMEZONE_MAP.containsKey(map.get(Z).toUpperCase())) {
+					timezone = TIMEZONE_MAP.get(map.get(Z).toUpperCase());
+				} else {
+					throw new IllegalCommandException("TIMZONE " + map.get(Z)
+							+ " is not valid!");
+				}
+			}
+
+			return new ShowCommand(clock, type, timezone, parseWithDefault(
+					map.get(X), 0), parseWithDefault(map.get(Y), 0));
 		case "help":
 			return new HelpCommand();
 		}

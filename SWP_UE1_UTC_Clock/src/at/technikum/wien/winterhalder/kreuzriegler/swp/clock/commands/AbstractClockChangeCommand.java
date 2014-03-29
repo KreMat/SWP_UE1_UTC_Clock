@@ -3,8 +3,6 @@
  */
 package at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands;
 
-import java.util.Calendar;
-
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.model.Clock;
 
 /**
@@ -21,8 +19,9 @@ public abstract class AbstractClockChangeCommand implements ICommand {
 	protected Integer mOld;
 	protected Integer sOld;
 
-	public AbstractClockChangeCommand(Integer h, Integer m, Integer s) {
-		this.clock = Clock.getInstance();
+	public AbstractClockChangeCommand(Clock clock, Integer h, Integer m,
+			Integer s) {
+		this.clock = clock;
 		this.h = h;
 		this.m = m;
 		this.s = s;
@@ -64,18 +63,4 @@ public abstract class AbstractClockChangeCommand implements ICommand {
 		mOld = clock.getMinute();
 		sOld = clock.getSecond();
 	}
-
-	protected void normalizeClock() {
-		Calendar cal = Calendar.getInstance();
-		cal.setLenient(true);
-		
-		cal.set(Calendar.HOUR_OF_DAY, clock.getHour());
-		cal.set(Calendar.MINUTE, clock.getMinute());
-		cal.set(Calendar.SECOND, clock.getSecond());
-		
-		clock.setHour(cal.get(Calendar.HOUR_OF_DAY));
-		clock.setMinute(cal.get(Calendar.MINUTE));
-		clock.setSecond(cal.get(Calendar.SECOND));
-	}
-
 }
