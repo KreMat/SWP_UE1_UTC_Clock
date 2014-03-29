@@ -80,4 +80,79 @@ public class ShowCommand implements ICommand {
 		view.close();
 	}
 
+	/**
+	 * @return the clock
+	 */
+	public Clock getClock() {
+		return clock;
+	}
+
+	/**
+	 * @param clock
+	 *            the clock to set
+	 */
+	public void setClock(Clock clock) {
+		this.clock = clock;
+	}
+
+	/**
+	 * @return the type
+	 */
+	public ClockType getType() {
+		return type;
+	}
+
+	/**
+	 * @param type
+	 *            the type to set
+	 */
+	public void setType(ClockType type) {
+		this.type = type;
+	}
+
+	/**
+	 * @return the timezone
+	 */
+	public int getTimezone() {
+		return timezone;
+	}
+
+	/**
+	 * @param timezone
+	 *            the timezone to set
+	 */
+	public void setTimezone(int timezone) {
+		this.timezone = timezone;
+	}
+
+	/**
+	 * @return the x
+	 */
+	public int getX() {
+		return x;
+	}
+
+	/**
+	 * @param x
+	 *            the x to set
+	 */
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	/**
+	 * @return the y
+	 */
+	public int getY() {
+		return y;
+	}
+
+	/**
+	 * @param y
+	 *            the y to set
+	 */
+	public void setY(int y) {
+		this.y = y;
+	}
+
 }

@@ -63,4 +63,46 @@ public abstract class AbstractClockChangeCommand implements ICommand {
 		mOld = clock.getMinute();
 		sOld = clock.getSecond();
 	}
+
+	/**
+	 * @return the h
+	 */
+	public Integer getH() {
+		return h;
+	}
+
+	/**
+	 * @param h the h to set
+	 */
+	public void setH(Integer h) {
+		this.h = h;
+	}
+
+	/**
+	 * @return the m
+	 */
+	public Integer getM() {
+		return m;
+	}
+
+	/**
+	 * @param m the m to set
+	 */
+	public void setM(Integer m) {
+		this.m = m;
+	}
+
+	/**
+	 * @return the s
+	 */
+	public Integer getS() {
+		return s;
+	}
+
+	/**
+	 * @param s the s to set
+	 */
+	public void setS(Integer s) {
+		this.s = s;
+	}
 }
