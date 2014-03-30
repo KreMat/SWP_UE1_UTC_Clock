@@ -1,11 +1,13 @@
 /**
  * 
  */
-package at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands;
+package at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.impl;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
+import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.ICommand;
 
 /**
  * @author Matthias

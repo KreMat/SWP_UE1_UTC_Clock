@@ -30,15 +30,14 @@ public class AbstractColoredClockView extends AbstractClockView {
 		frame = new JFrame();
 		panel = new JPanel();
 
-		panel.add(new JLabel("Hours:"));
 		hourField = new JLabel();
 		panel.add(hourField);
 
-		panel.add(new JLabel("Minutes:"));
+		panel.add(new JLabel(":"));
 		minuteField = new JLabel();
 		panel.add(minuteField);
 
-		panel.add(new JLabel("Seconds:"));
+		panel.add(new JLabel(":"));
 		secondField = new JLabel();
 		panel.add(secondField);
 

@@ -6,12 +6,12 @@ package at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commons;
 import java.util.HashMap;
 import java.util.Map;
 
-import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.DecCommand;
-import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.HelpCommand;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.ICommand;
-import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.IncCommand;
-import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.SetCommand;
-import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.ShowCommand;
+import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.impl.DecCommand;
+import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.impl.HelpCommand;
+import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.impl.IncCommand;
+import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.impl.SetCommand;
+import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.impl.ShowCommand;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.model.Clock;
 
 /**

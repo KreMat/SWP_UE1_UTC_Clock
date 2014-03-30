@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.IncCommand;
+import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.impl.IncCommand;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commons.CommandFactory;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commons.Commander;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commons.IllegalCommandException;

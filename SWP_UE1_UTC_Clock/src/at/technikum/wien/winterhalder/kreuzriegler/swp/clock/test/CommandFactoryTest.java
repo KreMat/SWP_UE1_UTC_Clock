@@ -7,10 +7,10 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
-import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.DecCommand;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.ICommand;
-import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.IncCommand;
-import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.ShowCommand;
+import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.impl.DecCommand;
+import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.impl.IncCommand;
+import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.impl.ShowCommand;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commons.ClockType;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commons.CommandFactory;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commons.IllegalCommandException;
@@ -82,7 +82,7 @@ public class CommandFactoryTest extends Assert {
 	
 	@Test(expected = IllegalCommandException.class)
 	public void testCommandInvalid2() throws IllegalCommandException {
-		CommandFactory.createCommand("inc - h 5 0");
+		CommandFactory.createCommand("inc - h 50");
 	}
 	
 	@Test(expected = IllegalCommandException.class)

@@ -1,8 +1,9 @@
 /**
  * 
  */
-package at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands;
+package at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.impl;
 
+import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.ICommand;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commons.ClockType;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.model.Clock;
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.view.AbstractClockView;
