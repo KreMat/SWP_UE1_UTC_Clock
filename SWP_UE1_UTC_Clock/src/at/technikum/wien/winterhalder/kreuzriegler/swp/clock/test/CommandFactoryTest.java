@@ -3,8 +3,7 @@
  */
 package at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test;
 
-import junit.framework.Assert;
-
+import org.junit.Assert;
 import org.junit.Test;
 
 import at.technikum.wien.winterhalder.kreuzriegler.swp.clock.commands.ICommand;
@@ -63,7 +62,7 @@ public class CommandFactoryTest extends Assert {
 		assertNull(incCommand.getM());
 		assertNull(incCommand.getS());
 	}
-	
+
 	@Test
 	public void testDec() throws IllegalCommandException {
 		ICommand command = CommandFactory
@@ -79,12 +78,12 @@ public class CommandFactoryTest extends Assert {
 	public void testCommandInvalid() throws IllegalCommandException {
 		CommandFactory.createCommand("dnc");
 	}
-	
+
 	@Test(expected = IllegalCommandException.class)
 	public void testCommandInvalid2() throws IllegalCommandException {
 		CommandFactory.createCommand("inc - h 50");
 	}
-	
+
 	@Test(expected = IllegalCommandException.class)
 	public void testCommandInvalid3() throws IllegalCommandException {
 		CommandFactory.createCommand("inc -h 5 0");

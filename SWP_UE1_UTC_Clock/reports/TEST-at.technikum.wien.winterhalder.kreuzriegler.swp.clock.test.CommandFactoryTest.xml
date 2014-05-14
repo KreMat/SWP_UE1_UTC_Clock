@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="0" hostname="Matthias-PC" name="at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest" tests="1" time="0.0" timestamp="2014-05-14T19:11:17">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="eclipse.pdebuild.templates" value="/D:/Entwicklung/eclipse/plugins/org.eclipse.pde.build_3.8.2.v20121114-140810/templates/" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Windows 8" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre7\lib\resources.jar;C:\Program Files\Java\jre7\lib\rt.jar;C:\Program Files\Java\jre7\lib\sunrsasign.jar;C:\Program Files\Java\jre7\lib\jsse.jar;C:\Program Files\Java\jre7\lib\jce.jar;C:\Program Files\Java\jre7\lib\charsets.jar;C:\Program Files\Java\jre7\lib\jfr.jar;C:\Program Files\Java\jre7\classes" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="D:\Entwicklung\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730" />
+    <property name="java.runtime.version" value="1.7.0_45-b18" />
+    <property name="user.name" value="Matthias" />
+    <property name="user.language" value="de" />
+    <property name="build" value="build" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre7\bin" />
+    <property name="ant.project.default-target" value="compile" />
+    <property name="ant.project.name" value="test" />
+    <property name="java.version" value="1.7.0_45" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre7\lib\endorsed" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="51.0" />
+    <property name="src" value="src" />
+    <property name="user.country" value="AT" />
+    <property name="java.home" value="C:\Program Files\Java\jre7" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="C:\Users\Matthias\git\SWP_UE1_UTC_Clock\SWP_UE1_UTC_Clock\build.xml" />
+    <property name="os.version" value="6.2" />
+    <property name="test.reports" value="reports" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="24.45-b08" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="D:\Entwicklung\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730\lib" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="user.script" value="" />
+    <property name="eclipse.pdebuild.scripts" value="/D:/Entwicklung/eclipse/plugins/org.eclipse.pde.build_3.8.2.v20121114-140810/scripts/" />
+    <property name="user.home" value="C:\Users\Matthias" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.library.path" value="C:\Program Files\Java\jre7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware vSphere CLI\Perl\site\bin;C:\Program Files (x86)\VMware\VMware vSphere CLI\Perl\bin;C:\oraclexe\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\HP SimplePass\;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;D:\Entwicklung\xampp\php;C:\Program Files\Java\jdk1.7.0_45\bin;D:\OpenSSL-Win32\bin;C:\Program Files\TortoiseGit\bin;." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Matthias\git\SWP_UE1_UTC_Clock\SWP_UE1_UTC_Clock\reports\TEST-at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest.xml crashfile=C:\Users\Matthias\git\SWP_UE1_UTC_Clock\SWP_UE1_UTC_Clock\junitvmwatcher7565032708688129551.properties propsfile=C:\Users\Matthias\git\SWP_UE1_UTC_Clock\SWP_UE1_UTC_Clock\junit6857473154821435940.properties" />
+    <property name="java.class.path" value="C:\Users\Matthias\git\SWP_UE1_UTC_Clock\SWP_UE1_UTC_Clock\junit-4.11.jar;D:\Entwicklung\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730\lib\ant-launcher.jar;D:\Entwicklung\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730\lib\ant.jar;D:\Entwicklung\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730\lib\ant-junit.jar;D:\Entwicklung\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730\lib\ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.3 compiled on February 26 2012" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="eclipse.pdebuild.home" value="/D:/Entwicklung/eclipse/plugins/org.eclipse.pde.build_3.8.2.v20121114-140810/./" />
+    <property name="java.io.tmpdir" value="C:\Users\Matthias\AppData\Local\Temp\" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="ant.file.test" value="C:\Users\Matthias\git\SWP_UE1_UTC_Clock\SWP_UE1_UTC_Clock\build.xml" />
+    <property name="ant.file.type.test" value="file" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre7\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+    <property name="user.dir" value="C:\Users\Matthias\git\SWP_UE1_UTC_Clock\SWP_UE1_UTC_Clock" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="C:\Users\Matthias\git\SWP_UE1_UTC_Clock\SWP_UE1_UTC_Clock" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="D:\Entwicklung\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730\lib\ant.jar" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="ant.project.invoked-targets" value="compile,test" />
+  </properties>
+  <error message="at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest" type="java.lang.ClassNotFoundException">java.lang.ClassNotFoundException: at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+</error>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
