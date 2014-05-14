@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Matthias-PC" name="at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest" tests="8" time="0.114" timestamp="2014-05-14T19:18:11">
+<testsuite errors="0" failures="0" hostname="Matthias-PC" name="at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest" tests="8" time="0.113" timestamp="2014-05-14T19:30:28">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -49,7 +49,7 @@
     <property name="java.vendor.url" value="http://java.oracle.com/" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Matthias\git\SWP_UE1_UTC_Clock\SWP_UE1_UTC_Clock\reports\TEST-at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest.xml crashfile=C:\Users\Matthias\git\SWP_UE1_UTC_Clock\SWP_UE1_UTC_Clock\junitvmwatcher8221860376614310138.properties propsfile=C:\Users\Matthias\git\SWP_UE1_UTC_Clock\SWP_UE1_UTC_Clock\junit7406799418122618841.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Matthias\git\SWP_UE1_UTC_Clock\SWP_UE1_UTC_Clock\reports\TEST-at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest.xml crashfile=C:\Users\Matthias\git\SWP_UE1_UTC_Clock\SWP_UE1_UTC_Clock\junitvmwatcher6933896791046617671.properties propsfile=C:\Users\Matthias\git\SWP_UE1_UTC_Clock\SWP_UE1_UTC_Clock\junit408809753292411399.properties" />
     <property name="java.class.path" value="C:\Users\Matthias\git\SWP_UE1_UTC_Clock\SWP_UE1_UTC_Clock\build;C:\Users\Matthias\git\SWP_UE1_UTC_Clock\SWP_UE1_UTC_Clock\junit-4.11.jar;C:\Users\Matthias\git\SWP_UE1_UTC_Clock\SWP_UE1_UTC_Clock\hamcrest-core-1.3.jar;D:\Entwicklung\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730\lib\ant-launcher.jar;D:\Entwicklung\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730\lib\ant.jar;D:\Entwicklung\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730\lib\ant-junit.jar;D:\Entwicklung\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730\lib\ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.8.3 compiled on February 26 2012" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
@@ -72,15 +72,15 @@
     <property name="ant.core.lib" value="D:\Entwicklung\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730\lib\ant.jar" />
     <property name="file.encoding" value="Cp1252" />
     <property name="java.specification.version" value="1.7" />
-    <property name="ant.project.invoked-targets" value="compile,test" />
+    <property name="ant.project.invoked-targets" value="test" />
   </properties>
-  <testcase classname="at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest" name="testDec" time="0.01" />
-  <testcase classname="at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest" name="testInc" time="0.002" />
+  <testcase classname="at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest" name="testDec" time="0.009" />
+  <testcase classname="at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest" name="testInc" time="0.001" />
   <testcase classname="at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest" name="testInc2" time="0.001" />
-  <testcase classname="at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest" name="testInc3" time="0.0" />
+  <testcase classname="at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest" name="testInc3" time="0.001" />
   <testcase classname="at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest" name="testShow" time="0.009" />
-  <testcase classname="at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest" name="testCommandInvalid" time="0.001" />
-  <testcase classname="at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest" name="testCommandInvalid2" time="0.001" />
+  <testcase classname="at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest" name="testCommandInvalid" time="0.0" />
+  <testcase classname="at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest" name="testCommandInvalid2" time="0.0" />
   <testcase classname="at.technikum.wien.winterhalder.kreuzriegler.swp.clock.test.CommandFactoryTest" name="testCommandInvalid3" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
