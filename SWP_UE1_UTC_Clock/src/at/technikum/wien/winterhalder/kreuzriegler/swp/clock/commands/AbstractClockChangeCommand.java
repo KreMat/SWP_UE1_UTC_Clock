@@ -56,6 +56,7 @@ public abstract class AbstractClockChangeCommand implements ICommand {
 		if (sOld != null) {
 			clock.setSecond(sOld);
 		}
+		//Test
 	}
 
 	protected void saveState() {
