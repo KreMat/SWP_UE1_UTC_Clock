@@ -29,7 +29,7 @@ public class CommandFactoryTest extends Assert {
 		assertEquals(ClockType.REDCLOCK, shCommand.getType());
 		assertEquals(50, shCommand.getX());
 		assertEquals(40, shCommand.getY());
-		assertEquals(50, shCommand.getTimezone());
+		assertEquals(60, shCommand.getTimezone());
 	}
 
 	@Test
